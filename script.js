@@ -18,7 +18,7 @@ function onClickCheck(checkbox) {
 
     if (!checkboxes.item(Index2).checked) {
       if (Index1 < Index2 || lastChecked > Index2) {
-        for (let i = Index2; i < lastChecked; i++)
+        for (let i = Index2; i <= lastChecked; i++)
           checkboxes.item(i).checked = false;
         return;
       }
